@@ -1,0 +1,14 @@
+<div class="main">
+  <ul class="cards">
+    <app-game-card
+      [game]="game"
+      (sendGame)="onSelectGame($event)"
+      *ngFor="let game of games"
+    ></app-game-card>
+  </ul>
+</div>
+<div class="modal" *ngIf="(gameSelected | json) != '{}'">
+  <div class="modal-wrap" (click)="onUnselectGame()">
+    <img src="{{ gameSelected.background_image }}" alt="" />
+  </div>
+</div>

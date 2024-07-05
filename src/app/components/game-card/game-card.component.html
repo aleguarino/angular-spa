@@ -1,0 +1,12 @@
+<li class="cards_item" (click)="onSelectGame()">
+  <div class="card">
+    <div class="card_price">{{ game.metacritic }}</div>
+    <div class="card_image"><img src="{{ game.background_image }}" /></div>
+    <div class="card_content">
+      <div class="card_title">{{ game.name }}</div>
+      <div class="card_text">
+        <span> {{ game.genres | allGenres }} </span>
+      </div>
+    </div>
+  </div>
+</li>

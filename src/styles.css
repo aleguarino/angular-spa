@@ -1,0 +1,9 @@
+body {
+  background-image: linear-gradient(
+      to top,
+      rgba(245, 246, 252, 0.52),
+      rgba(53, 51, 52, 0.73)
+    ),
+    url("assets/bg.jpg");
+  background-size: 700px;
+}
